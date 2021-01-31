@@ -1,0 +1,8 @@
+{
+  "events": {
+    "restart": "kill-port 3000",
+    "crash" : "kill-port 3000"
+  },
+  "exec": "babel-node --presets @babel/preset-env src/index.js",
+  "watch": ["src/*"]
+}
